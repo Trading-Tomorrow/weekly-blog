@@ -49,8 +49,8 @@ body{background:radial-gradient(1200px 600px at 15% -10%, rgba(110,168,254,.12),
   padding: 22px;
   gap: 10px;
   height: 100%;           /* para h-100 do Bootstrap funcionar */
-  transition: transform .2s ease, box-shadow .2s ease;
 }
+
 .team-card:hover{transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.35)}
 
 .team-avatar {
