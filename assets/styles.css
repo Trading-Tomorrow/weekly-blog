@@ -34,3 +34,48 @@ body{background:radial-gradient(1200px 600px at 15% -10%, rgba(110,168,254,.12),
   .t-item .t-dot{left:10px!important; right:auto}
 }
 .footer{color:var(--muted)}
+
+/* Team grid/cards */
+.team-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 22px;
+  gap: 10px;
+  height: 100%;           /* para h-100 do Bootstrap funcionar */
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.team-card:hover{transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.35)}
+
+.team-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+}
+
+.team-name { font-weight: 700; margin: 6px 0 0; }
+.team-role { color: #9aa3c7; font-size: .95rem; }
+
+.team-bio {
+  color: #d8def8;
+  font-size: .95rem;
+  margin-top: 6px;
+  /* mantém alturas parecidas mesmo com textos diferentes */
+  min-height: 3.6em;              /* ~2 linhas */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;          /* corta a 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* espaçamento consistente no grid */
+.team-row { row-gap: 24px; }
+
