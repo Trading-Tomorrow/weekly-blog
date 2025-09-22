@@ -6,42 +6,40 @@
 <title>Trading Tomorrow Blog — Weekly updates</title>
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-
+<script src="https://d3js.org/d3.v7.min.js"></script>
 
 <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="./">Trading Tomorrow</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="posts.html">Blog Posts</a></li>
-        <li class="nav-item"><a class="nav-link " href="timeline.html">Timeline</a></li>
-      </ul>
-    </div>
+<div id="ai-visualization-container" class="ai-landing-section">
+  <div class="ai-content-overlay">
+    <h2 class="ai-title reveal">MEIA - Trading Tomorrow</h2>
+    <p class="ai-subtitle reveal">Master's Project Blog - Exploring the neural networks that power tomorrow's financial decisions</p>
   </div>
-</nav>
-
-
-<header class="header-slim mt-5">
-  <div class="container">
-    <div class="kicker"><span class="dot"></span> Finance · Future Trading</div>
-    <h1 class="reveal">MEIA - Trading Tomorrow -  Master's Project Blog</h1>
-    <p class="text-secondary reveal mb-0">Notes and progress from our master's project.</p>
-    <div class="mt-3 d-flex gap-2">
-      <a href="posts.html" class="btn btn-outline-brand btn-pill">Latest posts</a>
-      <a href="timeline.html" class="btn btn-outline-brand btn-pill">Project timeline</a>
+  <svg id="ai-network-viz" width="100%" height="100%"></svg>
+  
+  <!-- Posts Cards at bottom of animation -->
+  <div class="ai-posts-overlay">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-glass-small p-3 h-100">
+            <h6><a class="link-light text-decoration-none" href="posts/week-1-future-trading.html">Week 1 — Future Trading 🚀</a></h6>
+            <div class="small text-secondary mb-2">1 min read · by Team</div>
+            <p class="small mb-2">Kick-off week: team onboarding, scope definition, and expert meetings.</p>
+            <div class="mt-auto">
+              <span class="tag-small">AI Trading</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
+    
   </div>
-</header>
-
+</div>
   <main class="container py-4 py-md-5">
     <div>
       <h1 class="reveal">Meet the team</h1>
