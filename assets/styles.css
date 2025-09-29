@@ -9,8 +9,8 @@ body{background:radial-gradient(1200px 600px at 15% -10%, rgba(110,168,254,.12),
 .navbar{backdrop-filter:saturate(140%) blur(8px);background-color:rgba(7,10,24,.6)!important;border-bottom:1px solid var(--border)}
 .navbar .nav-link{color:#cfd6ff}
 .navbar .nav-link.active,.navbar .nav-link:hover{color:var(--fg)}
-.card-glass{background:var(--card); border:1px solid var(--border); border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25); transition: transform .2s ease, box-shadow .2s ease;}
-.card-glass:hover{transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.card-glass{background:var(--card); border:1px solid var(--border); border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.35); transition: transform .2s ease, box-shadow .2s ease;}
+.card-glass:hover{transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.45)}
 .tag{font-size:.78rem;border:1px solid var(--border);border-radius:50rem;padding:.15rem .55rem;color:#cfe0ff}
 .btn-pill{border-radius:999px}
 .btn-outline-brand{border-color:var(--brand); color:var(--fg)}
