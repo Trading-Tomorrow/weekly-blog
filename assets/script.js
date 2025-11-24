@@ -339,3 +339,30 @@ function initAIVisualization() {
 
 // Initialize AI visualization when DOM is loaded
 document.addEventListener('DOMContentLoaded', initAIVisualization);
+
+// Project Tabs Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.project-tab');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs
+      tabs.forEach(t => t.classList.remove('active'));
+      
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      
+      // Hide all project containers
+      document.querySelectorAll('.project-container').forEach(container => {
+        container.style.display = 'none';
+      });
+      
+      // Show target container
+      const targetId = tab.getAttribute('data-target');
+      const targetContainer = document.getElementById(targetId);
+      if (targetContainer) {
+        targetContainer.style.display = 'block';
+      }
+    });
+  });
+});

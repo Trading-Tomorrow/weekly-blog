@@ -26,120 +26,154 @@
     <!-- Posts Cards at bottom of animation -->
     <div class="ai-posts-overlay">
       <div class="container">
-        <div class="row g-3">
-          <!-- Week 1 Card -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card-glass-small p-3 h-100">
-              <h6>
-                <a class="link-light text-decoration-none" href="posts/week-1-future-trading.html">
-                  Week 1 — Future Trading 🚀
-                </a>
-              </h6>
-              <div class="small text-secondary mb-2">1 min read · by Team</div>
-              <p class="small mb-2">Kick-off week: team onboarding, scope definition, and expert meetings.</p>
-              <div class="mt-auto">
-                <span class="tag-small">AI Trading</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Week 2 Card -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card-glass-small p-3 h-100">
-              <h6>
-                <a class="link-light text-decoration-none" href="posts/week-2-expert-system.html">
-                  Week 2 — 📈 Shaping the Foundation
-                </a>
-              </h6>
-              <div class="small text-secondary mb-2">2 min read · by Team</div>
-              <p class="small mb-2">Expert meetings, key variables defined, and a clear investment decision goal set.
-              </p>
-              <div class="mt-auto">
-                <span class="tag-small">Expert System</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Week 3 Card -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card-glass-small p-3 h-100">
-              <h6>
-                <a class="link-light text-decoration-none" href="posts/week-3-facts-creation.html">
-                  Week 3 — Facts Planning
-                </a>
-              </h6>
-              <div class="small text-secondary mb-2">2 min read · by Team</div>
-              <p class="small mb-2">Tasked teammates with fact gathering to fuel the knowledge base and prepare for
-                deeper expert reviews.</p>
-              <div class="mt-auto">
-                <span class="tag-small">Facts Planning</span>
-              </div>
+        <div class="row mb-4">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="project-tabs">
+              <button class="project-tab active" data-target="soccer-posts">Soccer Project ⚽️</button>
+              <button class="project-tab" data-target="futures-posts">Futures Trading 🚀</button>
             </div>
           </div>
         </div>
-        <div class="row g-4 mt-5 pt-2">
-          <!-- Week 4 Card -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card-glass-small p-3 h-100">
-              <h6>
-                <a class="link-light text-decoration-none" href="posts/week-4-rules-framework.html">
-                  Week 4 — Rules and Facts final definition
-                </a>
-              </h6>
-              <div class="small text-secondary mb-2">2 min read · by Team</div>
-              <p class="small mb-2">Selected the final facts and rules for our first expert system implementation.</p>
-              <div class="mt-auto">
-                <span class="tag-small">Rules and Facts final definition</span>
-              </div>
-            </div>
-          </div>
-          <!-- Week 5 Card -->
-          <div class="col-12 col-md-6 col-lg-4 reveal">
-            <div class="card-glass p-3 h-100">
-              <h6><a class="link-light text-decoration-none" href="posts/week-5-implementation.html">
-                  Week 5 — Implementation Progress
-                </a></h6>
-              <div class="small text-secondary">2 min read · by Team</div>
-              <p class="small mb-2">Continued the Drools implementation by refining the rules and implementing the
-                <em>why–why
-                  not</em> logic.
-              </p>
-              <div class="mt-auto">
-                <span class="tag-small">Presentation and implementation progress</span>
-              </div>
-            </div>
-          </div>
-          <!-- Week 6 Card -->
-          <div class="col-12 col-md-6 col-lg-4 reveal">
-            <div class="card-glass p-3 h-100">
-              <h6><a class="link-light text-decoration-none" href="posts/week-6-progress.html">
-                  Week 6 — Implementation Progress
-                </a></h6>
-              <div class="small text-secondary">2 min read · by Team</div>
-              <p class="small mb-2">Progress in the implementation and reports </p>
-              <div class="mt-auto">
-                <span class="tag-small">Progressing in the implementation and reports</span>
+
+        <!-- Soccer Project Posts -->
+        <div id="soccer-posts" class="project-container">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-glass-small p-3 h-100">
+                <h6>
+                  <a class="link-light text-decoration-none" href="#">
+                    Week 1 — Kickoff ⚽️
+                  </a>
+                </h6>
+                <div class="small text-secondary mb-2">Coming Soon · by Team</div>
+                <p class="small mb-2">New project, new goals. Stay tuned for updates on our soccer analytics journey.
+                </p>
+                <div class="mt-auto">
+                  <span class="tag-small">Soccer Analytics</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Week 7 Card-->
-        <div class="row g-4 mt-5 pt-2">
-          <div class="col-12 col-md-6 col-lg-4 reveal">
-            <div class="card-glass p-3 h-100">
-              <h6><a class="link-light text-decoration-none" href="posts/week-7-submission.html">
-                  Week 7 — Submission
-                </a></h6>
-              <div class="small text-secondary">2 min read · by Team</div>
-              <p class="small mb-2">Submission week: Review project and do adjustments to implementation and reports</p>
-              <div class="mt-auto">
-                <span class="tag-small">Conclusion and submission</span>
+        <!-- Futures Trading Posts -->
+        <div id="futures-posts" class="project-container" style="display: none;">
+          <div class="row g-3">
+            <!-- Week 1 Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-glass-small p-3 h-100">
+                <h6>
+                  <a class="link-light text-decoration-none" href="posts/week-1-future-trading.html">
+                    Week 1 — Future Trading 🚀
+                  </a>
+                </h6>
+                <div class="small text-secondary mb-2">1 min read · by Team</div>
+                <p class="small mb-2">Kick-off week: team onboarding, scope definition, and expert meetings.</p>
+                <div class="mt-auto">
+                  <span class="tag-small">AI Trading</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Week 2 Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-glass-small p-3 h-100">
+                <h6>
+                  <a class="link-light text-decoration-none" href="posts/week-2-expert-system.html">
+                    Week 2 — 📈 Shaping the Foundation
+                  </a>
+                </h6>
+                <div class="small text-secondary mb-2">2 min read · by Team</div>
+                <p class="small mb-2">Expert meetings, key variables defined, and a clear investment decision goal set.
+                </p>
+                <div class="mt-auto">
+                  <span class="tag-small">Expert System</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Week 3 Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-glass-small p-3 h-100">
+                <h6>
+                  <a class="link-light text-decoration-none" href="posts/week-3-facts-creation.html">
+                    Week 3 — Facts Planning
+                  </a>
+                </h6>
+                <div class="small text-secondary mb-2">2 min read · by Team</div>
+                <p class="small mb-2">Tasked teammates with fact gathering to fuel the knowledge base and prepare for
+                  deeper expert reviews.</p>
+                <div class="mt-auto">
+                  <span class="tag-small">Facts Planning</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="row g-4 mt-5 pt-2">
+            <!-- Week 4 Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-glass-small p-3 h-100">
+                <h6>
+                  <a class="link-light text-decoration-none" href="posts/week-4-rules-framework.html">
+                    Week 4 — Rules and Facts final definition
+                  </a>
+                </h6>
+                <div class="small text-secondary mb-2">2 min read · by Team</div>
+                <p class="small mb-2">Selected the final facts and rules for our first expert system implementation.</p>
+                <div class="mt-auto">
+                  <span class="tag-small">Rules and Facts final definition</span>
+                </div>
+              </div>
+            </div>
+            <!-- Week 5 Card -->
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+              <div class="card-glass p-3 h-100">
+                <h6><a class="link-light text-decoration-none" href="posts/week-5-implementation.html">
+                    Week 5 — Implementation Progress
+                  </a></h6>
+                <div class="small text-secondary">2 min read · by Team</div>
+                <p class="small mb-2">Continued the Drools implementation by refining the rules and implementing the
+                  <em>why–why
+                    not</em> logic.
+                </p>
+                <div class="mt-auto">
+                  <span class="tag-small">Presentation and implementation progress</span>
+                </div>
+              </div>
+            </div>
+            <!-- Week 6 Card -->
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+              <div class="card-glass p-3 h-100">
+                <h6><a class="link-light text-decoration-none" href="posts/week-6-progress.html">
+                    Week 6 — Implementation Progress
+                  </a></h6>
+                <div class="small text-secondary">2 min read · by Team</div>
+                <p class="small mb-2">Progress in the implementation and reports </p>
+                <div class="mt-auto">
+                  <span class="tag-small">Progressing in the implementation and reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Week 7 Card-->
+          <div class="row g-4 mt-5 pt-2">
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+              <div class="card-glass p-3 h-100">
+                <h6><a class="link-light text-decoration-none" href="posts/week-7-submission.html">
+                    Week 7 — Submission
+                  </a></h6>
+                <div class="small text-secondary">2 min read · by Team</div>
+                <p class="small mb-2">Submission week: Review project and do adjustments to implementation and reports
+                </p>
+                <div class="mt-auto">
+                  <span class="tag-small">Conclusion and submission</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
