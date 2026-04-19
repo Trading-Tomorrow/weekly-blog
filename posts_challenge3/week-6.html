@@ -1,1 +1,72 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 6 — Model Training Completion and System Integration</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../">ArgusAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../posts.html">Blog Posts</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-slim mt-5">
+        <div class="container">
+            <div class="kicker"><span class="dot"></span> Week 6</div>
+            <h1 class="reveal">Model Training Completion and System Integration</h1>
+            <p class="text-secondary reveal mb-0">2 min read · by Team</p>
+        </div>
+    </header>
+
+    <main class="container py-4 py-md-5">
+        <article class="mx-auto card-glass p-4" style="max-width:860px">
+            <p>
+                Week six marks the most significant milestone of the project so far — the completion of training across all our models. On the Natural Language Processing front, we successfully concluded the training of our transformer-based models, including fine-tuning Qwen3 on our curated dataset of accident descriptions. The results demonstrate a strong ability to classify and interpret textual claims, bringing us to the level of reliability we had set as a target from the outset.
+            </p>
+            <p>
+                In parallel, the Computer Vision pipeline reached its final trained state using YOLOv11. After several iterations of fine-tuning on our pre-processed vehicle damage dataset, the model now performs robust detection and localisation of anomalies, achieving the accuracy benchmarks we defined during the State of the Art phase. Having both branches of the system fully trained and evaluated is a significant step towards a complete, end-to-end solution.
+            </p>
+            <p>
+                Beyond model training, this week we developed the integration layer that brings everything together. We built a dedicated API that exposes both the NLP and Computer Vision capabilities, and a front-end interface that allows users to interact with the system directly — submitting claims, uploading images, and receiving fraud-risk assessments in real time. The original project vision is now consolidated into a working, demonstrable product.
+            </p>
+            <p>
+                Finally, significant progress was made on the report. The methodology, integration, and conclusion sections were written this week, rounding out the academic documentation and ensuring the work is properly framed and communicated.
+            </p>
+            <hr />
+            <div class="mt-3">
+                <a class="btn btn-outline-brand btn-pill" href="../">← Back to home</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer border-top border-1 border-opacity-10 border-white-50 py-4">
+        <div class="container small d-flex flex-wrap gap-2 justify-content-between">
+            <span>© 2026 — Project Blog</span>
+            <span><a class="link-secondary" href="../timeline.html">Timeline</a> · <a class="link-secondary"
+                    href="../about.html">About</a></span>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>
