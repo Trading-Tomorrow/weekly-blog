@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Week 4 — State of the Art & Article Prep</title>
+  <title>Week 5 — Agent Architecture & Webots Setup</title>
   <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
   <script src="../assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="../assets/styles.css" />
@@ -31,23 +31,24 @@
 
   <header class="header-slim mt-5">
     <div class="container">
-      <div class="kicker"><span class="dot"></span> Week 4</div>
-      <h1 class="reveal">State of the Art & Article Prep</h1>
-      <p class="text-secondary reveal mb-0">1 min read · by Team</p>
+      <div class="kicker"><span class="dot"></span> Week 5</div>
+      <h1 class="reveal">Agent Communication & Webots ROS2 Integration</h1>
+      <p class="text-secondary reveal mb-0">2 min read · by Team</p>
     </div>
   </header>
 
   <main class="container py-4 py-md-5">
     <article class="mx-auto card-glass p-4" style="max-width:860px">
-      <p>During the fourth week of our project, we focused on researching and writing the State of the Art section. This was a critical step as we needed to deliver this initial portion of our research article.
+      <p>During the fifth week, we advanced our project development significantly, shifting focus towards implementation details for both multi-agent communication and robotics simulation:
       <br/>
       <br/>
+      Our key progress and structural decisions include:
       <ul>
-        <li><strong>Literature Review</strong>: Investigated existing research in humanoid robotics, image analysis for vehicle repair, and concurrent multi-agent coordination.</li>
-        <li><strong>Article Writing</strong>: Structured and drafted the State of the Art section, aligning our proposed methodologies with existing scientific literature.</li>
-        <li><strong>Simulation Platform Pivot</strong>: Faced critical setup and dependency installation errors when configuring the humanoid robot in MuJoCo. As a result, we decided to pivot our robotics simulation framework from MuJoCo to Webots to ensure a smoother model setup.</li>
+        <li><strong>Multi-Agent Architecture Redesign</strong>: We refactored agent communication by altering the initial system architecture. We decided to remove the facilitator agent because it was taking on too many responsibilities, creating a bottleneck. Removing the facilitator allows direct agent-to-agent communication, encouraging more flexible and decentralized interactions.</li>
+        <li><strong>Robotics & Webots Simulation</strong>: We successfully imported the environment map and configured our humanoid robot inside Webots. Our focus is now on developing the bridge and communication pipelines between the Webots simulation and ROS2 to enable control and sensor data acquisition.</li>
+        <li><strong>Team Dynamics & Collaboration</strong>: We also began experiencing some collaboration challenges this week. It has felt like the group is not functioning with the cohesion and output expected of a 6-person team, highlighting the need to adjust how we coordinate and distribute tasks going forward.</li>
       </ul>
-      This milestone establishes the theoretical foundation and the revised simulation pipeline for our upcoming implementation and prototyping phases.
+      These changes streamline our system architecture, progress our simulation setup, and highlight areas where we need to strengthen our teamwork.
       </p>
       <hr />
       <div class="mt-3">
